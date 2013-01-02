@@ -1,0 +1,128 @@
+// Node
+// Styles for Nodes
+// --------------------------------------------------
+
+// General
+// --------------------------------------------------
+.node {
+  .field-name-title {
+    font-weight: 400;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+  .pane-entity-field {
+    margin-bottom: 10px !important;
+  }
+}
+
+// Menu
+// --------------------------------------------------
+.node-menu {
+  .field-name-field-menu-types {
+    .field-item {
+      margin-bottom: 5px;
+      .field-name-field-menu-type {
+        float: left;
+      }
+      .field-name-field-menu-price {
+        float: right;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // Teaser
+  &.view-mode-teaser {
+
+  }
+
+  // Featured
+  &.view-mode-featured {
+  }
+
+  // Full
+  &.view-mode-full {
+
+  }
+}
+
+// Blog Post
+// --------------------------------------------------
+.node-blog-post,
+#blog-node {
+  .field-name-submitted-by,
+  .pane-node-field-name-submitted-by {
+    font-weight: 400;
+  }
+  .field-name-field-blog-post-categories,
+  .pane-node-field-blog-post-categories {
+    float: left;
+    .field-items {
+      @include clearfix();
+      .field-item {
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .field-name-field-blog-post-tags,
+  .pane-node-field-blog-post-tags {
+    float: right;
+    .field-items {
+      @include clearfix();
+      .field-item {
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  ul.links {
+    clear: left;
+    display: block;
+  }
+
+  // teaser
+  &.node-teaser {
+    margin: 0 0 30px !important;
+    padding: 0 0 20px !important;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  // featured
+  &.node-featured {
+    margin-bottom: 10px;
+    .sidebar {
+      float: left;
+    }
+    .pane-node-title {
+      margin-bottom: 0;
+      .pane-content {
+        margin-bottom: 5px;
+        a {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+// Event
+// --------------------------------------------------
+.node-event {
+  &.node-featured {
+    margin-bottom: 10px;
+    .sidebar {
+      float: left;
+    }
+    .pane-node-title {
+      margin-bottom: 0;
+      .pane-content {
+        margin-bottom: 5px;
+        a {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

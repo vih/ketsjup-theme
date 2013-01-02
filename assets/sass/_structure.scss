@@ -1,0 +1,30 @@
+//
+// Structure
+// Styles for Tabs, Messages, ..etc
+// --------------------------------------------------
+
+// Page Header
+// --------------------------------------------------
+.page-header {
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+// Slideshow
+// --------------------------------------------------
+.pane-bundle-slideshow {
+  margin-bottom: 20px;
+}
+
+// Tabs
+// --------------------------------------------------
+ul {
+  &.tabs.secondary > .active > a, &.action-links > .active > a  {
+    background-color: $link-color;
+    &:hover {
+      background-color: $link-color;
+    }
+  }
+}

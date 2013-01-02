@@ -1,0 +1,31 @@
+//
+// Color
+// --------------------------------------------------
+
+// General
+$body-background-color: #FFFFFF;
+$header-background-color: #FFFFFF;
+$main-background-color: #FFFFFF;
+$footer-background-color: #FFFFFF;
+
+// Text
+$text-color: #4F4E57;
+$link-color: #0088CC;
+$link-hover-color: darken($link-color, 20);
+$footer-color: #4F4E57;
+
+// Navbar
+$navbar-background-color: #0088CC;
+$navbar-color: #FFFFFF;
+$brand-color: #FFFFFF;
+
+body {
+  color: $text-color;
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+  }
+}

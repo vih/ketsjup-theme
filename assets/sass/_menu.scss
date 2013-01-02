@@ -1,0 +1,85 @@
+// Menu
+// Styles for Menus and Navs
+// --------------------------------------------------
+
+// Main Menu
+// --------------------------------------------------
+#main-menu {
+  > ul.menu {
+    li {
+      > a {
+        color: $navbar-color;
+        text-shadow: 0 1px 0 darken($navbar-color, 80);
+        &.active {
+          background: darken($navbar-background-color, 10);
+          color: $navbar-color;
+        }
+        &:hover {
+          background: darken($navbar-background-color, 10);
+          color: $navbar-color;
+        }
+      }
+      &.open {
+        > a {
+          background: darken($navbar-background-color, 10);
+          color: $navbar-color;
+        }
+      }
+      > ul.menu {
+        li {
+          a {
+            text-shadow: none;
+            &.active {
+              background-color: lighten($link-color, 40);
+            }
+            &:hover {
+              background: darken($navbar-background-color, 10);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Navbar
+// --------------------------------------------------
+.navbar {
+  .btn-navbar {
+    border-color: darken($navbar-background-color, 30);
+    @include gradient-vertical(darken($navbar-background-color, 10), darken($navbar-background-color, 20));
+    &:hover {
+      @include transition(none);
+      @include gradient-vertical(darken($navbar-background-color, 20), darken($navbar-background-color, 10));
+    }
+  }
+}
+
+// Pane Menu Tree
+// --------------------------------------------------
+.pane-menu-tree {
+  .pane-content {
+    ul.menu {
+      li {
+        a {
+          &:hover {
+            background-color: lighten($link-color, 40);
+          }
+        }
+        &.active-trail {
+          > a {
+            background-color: $link-color;
+          }
+          > ul.menu {
+            &.active-trail {
+              > a {
+                background-color: lighten($link-color, 40);
+                color: $link-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

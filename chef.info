@@ -1,0 +1,22 @@
+name        = Chef
+description = A starter theme for the Restaurant Ditribution based on Radix
+screenshot  = screenshot.png
+core        = 7.x
+
+; Base - Radix
+base theme  = radix
+
+; Regions
+regions[help]         = Help
+regions[content]      = Content
+regions[footer]       = Footer
+
+; CSS - General
+stylesheets[all][]     = assets/stylesheets/screen.css
+stylesheets[print][]   = assets/stylesheets/print.css
+
+; CSS - Conditional
+stylesheets-conditional[IE][all][] = assets/stylesheets/ie.css
+
+; Javascript
+scripts[] = assets/javascripts/script.js

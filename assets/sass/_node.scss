@@ -1,107 +1,122 @@
 // Node
 // Styles for Nodes
 // --------------------------------------------------
-
-// General
-// --------------------------------------------------
-.node {
-  .field-name-title {
-    font-weight: 400;
-    p {
-      margin-bottom: 5px;
+.field {
+  &.field-type-image {
+    .field-item {
+      border: none;
+      padding: 0;
+      overflow: hidden;
     }
-  }
-  .pane-entity-field {
-    margin-bottom: 10px !important;
   }
 }
 
 // Menu
 // --------------------------------------------------
-.node-menu {
-  .field-name-field-menu-types {
-    .field-item {
-      margin-bottom: 5px;
-      .field-name-field-menu-type {
+.pane-node-field-menu-types {
+  .field {
+    .field-items {
+      @include clearfix();
+      margin: 0 0 0 -10px;
+      .field-item {
         float: left;
-      }
-      .field-name-field-menu-price {
-        float: right;
-        font-weight: bold;
+        font-size: 0.95em;
+        margin: 0 0 0 10px;
       }
     }
-  }
-
-  // Teaser
-  &.view-mode-teaser {
-
-  }
-
-  // Featured
-  &.view-mode-featured {
-  }
-
-  // Full
-  &.view-mode-full {
-
   }
 }
 
-// Blog Post
+@media (max-width: 767px) {
+  .node-menu {
+    &.node-teaser,
+    &.node-featured {
+      .panel-pane {
+        margin: 0 0 0 140px;
+      }
+      .pane-node-field-menu-images {
+        float: left;
+        margin: 0;
+        width: 120px;
+      }
+    }
+
+    &.node-teaser {
+      .pane-node-title {
+        font-size: 1.5em;
+        line-height: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.node-featured {
+      .span4 {
+        float: left;
+        margin: 0;
+        width: 120px;
+      }
+    }
+  }
+}
+
+// Blog
 // --------------------------------------------------
-.node-blog-post,
+.pane-node-field-blog-post-tags {
+  float: left;
+}
+.pane-node-field-blog-post-categories {
+  float: right;
+}
+.pane-node-field-blog-post-tags,
+.pane-node-field-blog-post-categories {
+  .field {
+    .field-items {
+      .field-item {
+        display: inline;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
 #blog-node {
-  .field-name-submitted-by,
-  .pane-node-field-name-submitted-by {
-    font-weight: 400;
-  }
-  .field-name-field-blog-post-categories,
-  .pane-node-field-blog-post-categories {
-    float: left;
-    .field-items {
-      @include clearfix();
-      .field-item {
-        display: inline;
-        margin: 0 10px 0 0;
+  > .container {
+    > .row-fluid {
+      > .content {
+        .pane-entity-field {
+          margin-bottom: 10px;
+        }
       }
     }
   }
-  .field-name-field-blog-post-tags,
-  .pane-node-field-blog-post-tags {
-    float: right;
-    .field-items {
-      @include clearfix();
-      .field-item {
-        display: inline;
-        margin: 0 10px 0 0;
-      }
-    }
-  }
-  ul.links {
-    clear: left;
-    display: block;
-  }
+}
 
-  // teaser
+.node-blog-post {
   &.node-teaser {
-    margin: 0 0 30px !important;
-    padding: 0 0 20px !important;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 18px !important;
+    padding-bottom: 18px !important;
+    > h2 {
+      margin-bottom: 18px;
+    }
+    .pane-entity-field {
+      margin-bottom: 10px;
+    }
+    .pane-node-links {
+      clear: both;
+    }
   }
 
-  // featured
   &.node-featured {
-    margin-bottom: 10px;
-    .sidebar {
-      float: left;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 18px !important;
+    padding-bottom: 18px !important;
+    .pane-entity-field {
+      margin-bottom: 5px;
     }
     .pane-node-title {
-      margin-bottom: 0;
       .pane-content {
         margin-bottom: 5px;
-        a {
-          font-size: 1.2em;
-        }
       }
     }
   }
@@ -109,19 +124,44 @@
 
 // Event
 // --------------------------------------------------
+#event-node {
+  > .container {
+    > .row-fluid {
+      > .content {
+        .pane-entity-field {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
 .node-event {
+  &.node-teaser {
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 18px !important;
+    padding-bottom: 18px !important;
+    > h2 {
+      margin-bottom: 18px;
+    }
+    .pane-entity-field {
+      margin-bottom: 10px;
+    }
+    .pane-node-links {
+      clear: both;
+    }
+  }
+
   &.node-featured {
-    margin-bottom: 10px;
-    .sidebar {
-      float: left;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 18px !important;
+    padding-bottom: 18px !important;
+    .pane-entity-field {
+      margin-bottom: 5px;
     }
     .pane-node-title {
-      margin-bottom: 0;
       .pane-content {
         margin-bottom: 5px;
-        a {
-          font-size: 1.2em;
-        }
       }
     }
   }

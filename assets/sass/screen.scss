@@ -1,6 +1,8 @@
 // @file
 // SASS partials import
 // --------------------------------------------------
+@import "compass/utilities";
+@import "compass/css3";
 
 // Theme CSS
 // --------------------------------------------------
@@ -14,8 +16,6 @@
 @import "panel";
 @import "view";
 @import "form";
+@import "comment";
 @import "node";
-
-// Other
-// --------------------------------------------------
-@import "maintenance";
+@import "user";

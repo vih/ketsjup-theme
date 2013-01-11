@@ -1,18 +1,16 @@
 // Page
 // Styles for panels
 // --------------------------------------------------
-
-// General
-// --------------------------------------------------
 .panel-display {
-  .sidebar {
-    .panel-pane {
-      margin-bottom: 20px;
-    }
-  }
-  .content {
-    .panel-pane {
-      margin-bottom: 20px;
+  > .container {
+    > .row-fluid {
+      > .sidebar {
+        > .panel-panel-inner {
+          > .panel-pane {
+            margin-bottom: 28px;
+          }
+        }
+      }   
     }
   }
 }

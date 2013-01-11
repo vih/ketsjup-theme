@@ -2,38 +2,61 @@
 // Styles for Menus and Navs
 // --------------------------------------------------
 
-// Main Menu
+// Navigation
 // --------------------------------------------------
-#main-menu {
-  > ul.menu {
-    li {
-      > a {
-        color: $navbar-color;
-        text-shadow: 0 1px 0 darken($navbar-color, 80);
-        &.active {
-          background: darken($navbar-background-color, 10);
-          color: $navbar-color;
-        }
-        &:hover {
-          background: darken($navbar-background-color, 10);
-          color: $navbar-color;
-        }
-      }
-      &.open {
-        > a {
-          background: darken($navbar-background-color, 10);
-          color: $navbar-color;
+#navigation {
+  .btn-navbar {
+    background: $theme-main-color;
+    color: #FFFFFF;
+    height: 20px;
+    padding: 5px 10px;
+    text-shadow: none;
+    width: 20px;
+    &:hover {
+      color: #111111;
+      @include box-shadow(none);
+      span {
+        color: #111111;
+        &.icon-bar {
+          background: #111111;
         }
       }
-      > ul.menu {
+    }
+  }
+  .btn-navbar-menu {
+    padding: 8px 10px 3px;
+  }
+  .navbar-inner {
+    background: none;
+    border: none;
+    @include box-shadow(none);
+    padding: 0;
+    .brand {
+      color: #FFFFFF;
+      font-size: 2.0em;
+      padding: 14px 20px;
+      text-shadow: none;
+    }
+    #main-menu {
+      margin-left: 100px;
+      ul {
         li {
           a {
+            color: #FFFFFF;
+            font-size: 1.2em;
+            line-height: 160%;
+            padding: 11px 15px 10px;
             text-shadow: none;
-            &.active {
-              background-color: lighten($link-color, 40);
+            text-transform: uppercase;
+            &.active, &:hover {
+              background: none;
+              @include box-shadow(none);
+              color: $link-color;
             }
-            &:hover {
-              background: darken($navbar-background-color, 10);
+          }
+          &.activet-trail {
+            a {
+              background: none;
             }
           }
         }
@@ -42,41 +65,67 @@
   }
 }
 
-// Navbar
-// --------------------------------------------------
-.navbar {
-  .btn-navbar {
-    border-color: darken($navbar-background-color, 30);
-    @include gradient-vertical(darken($navbar-background-color, 10), darken($navbar-background-color, 20));
-    &:hover {
-      @include transition(none);
-      @include gradient-vertical(darken($navbar-background-color, 20), darken($navbar-background-color, 10));
+@media (max-width: 767px) { 
+  #navigation {
+    .navbar-inner {
+      .brand {
+        font-size: 1.2em;
+      }
+      #main-menu {
+        margin-left: 0;
+        ul {
+          li {
+            a {
+              background: none;
+              text-align: center;
+              &:hover {
+                background: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
-// Pane Menu Tree
+// Footer Menu
 // --------------------------------------------------
-.pane-menu-tree {
-  .pane-content {
-    ul.menu {
-      li {
+#footer {
+  a {
+    color: #BBBBBB;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+  .container {
+    > .row {
+      h4 {
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left: 1px!important;
+        font-size: 11px;
+        line-height: 21px;
+        margin-bottom: 2px;
+        text-align: center;
+      }
+      h3 {
+        color: #BBBBBB;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 0;
+        text-align: center;
         a {
-          &:hover {
-            background-color: lighten($link-color, 40);
-          }
-        }
-        &.active-trail {
-          > a {
-            background-color: $link-color;
-          }
-          > ul.menu {
-            &.active-trail {
-              > a {
-                background-color: lighten($link-color, 40);
-                color: $link-color;
-              }
-            }
+          text-decoration: none;
+          i {
+            display: block;
+            font-size: 3.0em;
+            height: auto;
+            line-height: 100%;
+            margin: 7px auto;
+            text-align: center;
+            width: auto;
           }
         }
       }

@@ -1,31 +1,14 @@
 //
 // Color
 // --------------------------------------------------
+$theme-main-color: #FA5D00;
+$theme-secondary-color: #111111;
 
-// General
 $body-background-color: #FFFFFF;
-$header-background-color: #FFFFFF;
-$main-background-color: #FFFFFF;
-$footer-background-color: #FFFFFF;
+$header-background-color: #000000;
+$footer-background-color: #191818;
 
-// Text
-$text-color: #4F4E57;
-$link-color: #0088CC;
-$link-hover-color: darken($link-color, 20);
-$footer-color: #4F4E57;
+$text-color: #808080;
 
-// Navbar
-$navbar-background-color: #0088CC;
-$navbar-color: #FFFFFF;
-$brand-color: #FFFFFF;
-
-body {
-  color: $text-color;
-  a {
-    color: $link-color;
-    &:hover {
-      color: $link-hover-color;
-      text-decoration: none;
-    }
-  }
-}
+$link-color: #FA5D00;
+$link-hover-color: #111111;

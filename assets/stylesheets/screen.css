@@ -229,7 +229,7 @@ body {
   #footer a:hover {
     color: #FFFFFF; }
 /* line 103, ../sass/_menu.scss */
-#footer .container > .row h4 {
+#footer .container .footer-links h4 {
   color: #666666;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -239,17 +239,17 @@ body {
   margin-bottom: 2px;
   text-align: center; }
 /* line 113, ../sass/_menu.scss */
-#footer .container > .row h3 {
+#footer .container .footer-links h3 {
   color: #BBBBBB;
   font-size: 18px;
   line-height: 21px;
   margin-top: 0;
   text-align: center; }
   /* line 119, ../sass/_menu.scss */
-  #footer .container > .row h3 a {
+  #footer .container .footer-links h3 a {
     text-decoration: none; }
     /* line 121, ../sass/_menu.scss */
-    #footer .container > .row h3 a i {
+    #footer .container .footer-links h3 a i {
       display: block;
       font-size: 3.0em;
       height: auto;

@@ -93,23 +93,6 @@
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
-    <div class="row">
-      <div class="span3">
-        <h4>Get the latest</h4>
-        <h3><a href="#">Follow Us on Twitter<i class="icon-twitter"></i></a></h3>
-      </div>
-      <div class="span3">
-        <h4>Like Us</h4>
-        <h3><a href="#">We're on Facebook<i class="icon-facebook"></i></a></h3>
-      </div>
-      <div class="span3">
-        <h4>Keep in Touch</h4>
-        <h3><a href="#">Say Hello here<i class="icon-envelope"></i></a></h3>
-      </div>
-      <div class="span3">
-        <h4>Call us</h4>
-        <h3><a href="#">+1 (888) 800-100<i class="icon-phone"></i></a></h3>
-      </div>
-    </div>
+    <?php print $footer_links; ?>
   </div>
 </footer>

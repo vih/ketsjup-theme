@@ -36,7 +36,7 @@ function chef_preprocess_page(&$variables) {
     ),
   );
 
-  $footer_links = '<div class="footer-links row">';
+  $footer_links = '<div class="footer-links row-fluid">';
   foreach ($links as $link) {
     $title = $link['title'];
     

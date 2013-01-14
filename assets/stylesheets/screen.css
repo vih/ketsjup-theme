@@ -258,6 +258,28 @@ body {
       text-align: center;
       width: auto; }
 
+/* line 5, ../sass/_navbar.scss */
+#navbar .navbar-bar {
+  background-color: #2b2c30; }
+/* line 8, ../sass/_navbar.scss */
+#navbar .navbar-tray {
+  background-color: #2b2c30; }
+  /* line 16, ../sass/_navbar.scss */
+  #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li .box > a:hover {
+    background: #fa5d00 !important; }
+    /* line 18, ../sass/_navbar.scss */
+    #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li .box > a:hover i {
+      background-color: #943700; }
+  /* line 27, ../sass/_navbar.scss */
+  #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li ul.menu li a:hover {
+    border-left: 60px solid #943700; }
+  /* line 34, ../sass/_navbar.scss */
+  #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li.open > .box {
+    background: #fa5d00 !important; }
+    /* line 37, ../sass/_navbar.scss */
+    #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li.open > .box > a i {
+      background-color: #943700; }
+
 /* line 7, ../sass/_page.scss */
 #front-page {
   margin-top: -18px; }

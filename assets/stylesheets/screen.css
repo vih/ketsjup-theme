@@ -261,22 +261,25 @@ body {
 /* line 5, ../sass/_navbar.scss */
 #navbar .navbar-bar {
   background-color: #2b2c30; }
-/* line 8, ../sass/_navbar.scss */
+  /* line 11, ../sass/_navbar.scss */
+  #navbar .navbar-bar .section ul.menu li a:hover, #navbar .navbar-bar .section ul.menu li a.active {
+    background: #fa5d00 !important; }
+/* line 19, ../sass/_navbar.scss */
 #navbar .navbar-tray {
   background-color: #2b2c30; }
-  /* line 16, ../sass/_navbar.scss */
+  /* line 27, ../sass/_navbar.scss */
   #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li .box > a:hover {
     background: #fa5d00 !important; }
-    /* line 18, ../sass/_navbar.scss */
+    /* line 29, ../sass/_navbar.scss */
     #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li .box > a:hover i {
       background-color: #943700; }
-  /* line 27, ../sass/_navbar.scss */
+  /* line 38, ../sass/_navbar.scss */
   #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li ul.menu li a:hover {
     border-left: 60px solid #943700; }
-  /* line 34, ../sass/_navbar.scss */
+  /* line 45, ../sass/_navbar.scss */
   #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li.open > .box {
     background: #fa5d00 !important; }
-    /* line 37, ../sass/_navbar.scss */
+    /* line 48, ../sass/_navbar.scss */
     #navbar .navbar-tray .navbar-menu .fleximenu > ul.menu > li.open > .box > a i {
       background-color: #943700; }
 

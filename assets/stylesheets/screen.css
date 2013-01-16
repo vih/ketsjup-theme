@@ -40,36 +40,32 @@ body {
     padding: 50px 0; }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 32, ../sass/_layout.scss */
+  /* line 28, ../sass/_layout.scss */
   body #header {
     margin-left: -20px;
     margin-right: -20px; } }
 @media (max-width: 767px) {
-  /* line 41, ../sass/_layout.scss */
+  /* line 37, ../sass/_layout.scss */
   body #header {
     margin-left: -20px;
     margin-right: -20px; }
-    /* line 44, ../sass/_layout.scss */
+    /* line 40, ../sass/_layout.scss */
     body #header > .container {
       padding-left: 20px;
       padding-right: 20px; }
-  /* line 49, ../sass/_layout.scss */
-  body #main-wrapper {
-    margin-left: -20px;
-    margin-right: -20px; }
-    /* line 54, ../sass/_layout.scss */
-    body #main-wrapper #main > #content > #page-header {
-      padding-left: 20px;
-      padding-right: 20px; }
-    /* line 59, ../sass/_layout.scss */
-    body #main-wrapper #main > #content > .panel-display > .container {
-      padding-left: 20px;
-      padding-right: 20px; }
-  /* line 67, ../sass/_layout.scss */
+  /* line 48, ../sass/_layout.scss */
+  body #main-wrapper #main > #content > #page-header {
+    padding-left: 20px;
+    padding-right: 20px; }
+  /* line 53, ../sass/_layout.scss */
+  body #main-wrapper #main > #content > .panel-display > .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+  /* line 61, ../sass/_layout.scss */
   body #footer {
     margin-left: -20px;
     margin-right: -20px; }
-    /* line 70, ../sass/_layout.scss */
+    /* line 64, ../sass/_layout.scss */
     body #footer > .container {
       padding-left: 20px;
       padding-right: 20px; } }
@@ -310,12 +306,16 @@ body {
     padding: 50px 0; }
 
 @media (max-width: 767px) {
-  /* line 43, ../sass/_page.scss */
-  #front-page .header .field-slideshow-wrapper .field-slideshow-caption .field-slideshow-caption-text h2 {
-    font-size: 2.0em; }
-  /* line 46, ../sass/_page.scss */
-  #front-page .header .field-slideshow-wrapper .field-slideshow-caption .field-slideshow-caption-text p {
-    display: none; } }
+  /* line 40, ../sass/_page.scss */
+  #front-page .header .field-slideshow-wrapper {
+    margin-left: -20px;
+    margin-right: -20px; }
+    /* line 45, ../sass/_page.scss */
+    #front-page .header .field-slideshow-wrapper .field-slideshow-caption .field-slideshow-caption-text h2 {
+      font-size: 2.0em; }
+    /* line 48, ../sass/_page.scss */
+    #front-page .header .field-slideshow-wrapper .field-slideshow-caption .field-slideshow-caption-text p {
+      display: none; } }
 /* line 9, ../sass/_panel.scss */
 .panel-display > .container > .row-fluid > .sidebar > .panel-panel-inner > .panel-pane {
   margin-bottom: 28px; }

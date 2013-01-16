@@ -23,10 +23,6 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-
-}
-
 @media (min-width: 768px) and (max-width: 979px) { 
   body {
     #header {
@@ -47,8 +43,6 @@ body {
       }
     }
     #main-wrapper {
-      margin-left: -20px;
-      margin-right: -20px;
       #main {
         > #content {
           > #page-header {

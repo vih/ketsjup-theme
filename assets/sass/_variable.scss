@@ -180,7 +180,7 @@ $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1 !default;
 
 $navbarHeight:                    40px !default;
-$navbarBackgroundHighlight:       #ffffff !default;
+$navbarBackgroundHighlight:       #111 !default;
 $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 

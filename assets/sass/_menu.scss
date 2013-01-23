@@ -27,7 +27,7 @@
     padding: 8px 10px 3px;
   }
   .navbar-inner {
-    background: none;
+    @include ctb-gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
     border: none;
     @include box-shadow(none);
     padding: 0;

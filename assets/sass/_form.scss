@@ -30,14 +30,12 @@ form {
     color: #fff;
 }
 .btn-primary {
-  background: $theme-main-color;
+  background: $linkColor;
 }
 .btn:hover {
-    background: $theme-secondary-color;
-    -webkit-box-shadow: 1px 1px #d8d8d8;
-    -moz-box-shadow: 1px 1px #d8d8d8;
-    box-shadow: 1px 1px #d8d8d8;
-    color: #fff;
+    background: $linkColorHover;
+    @include box-shadow(1px 1px #d8d8d8);
+    color: $white;
 }
 .btn:active {
     background: #2A69EF;

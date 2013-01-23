@@ -3,9 +3,8 @@
 // Styles for main layout
 // --------------------------------------------------
 body {
-  background-color: $body-background-color;
   #header {
-    background-color: $header-background-color;
+    background-color: $headerBackgroundColor;
     margin-bottom: 18px;
   }
   #main-wrapper {
@@ -17,7 +16,7 @@ body {
     }
   }
   #footer {
-    background-color: $footer-background-color;
+    background-color: $footerBackgroundColor;
     color: #BBBBBB;
     padding: 50px 0;
   }

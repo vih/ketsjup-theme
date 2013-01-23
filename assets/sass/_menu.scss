@@ -6,8 +6,8 @@
 // --------------------------------------------------
 #navigation {
   .btn-navbar {
-    background: $theme-main-color;
-    color: #FFFFFF;
+    background: $linkColor;
+    color: $white;
     height: 20px;
     padding: 5px 10px;
     text-shadow: none;
@@ -38,11 +38,10 @@
       text-shadow: none;
     }
     #main-menu {
-      margin-left: 100px;
       ul {
         li {
           a {
-            color: #FFFFFF;
+            color: $white;
             font-size: 1.2em;
             line-height: 160%;
             padding: 11px 15px 10px;
@@ -51,7 +50,7 @@
             &.active, &:hover {
               background: none;
               @include box-shadow(none);
-              color: $link-color;
+              color: $linkColor;
             }
           }
           &.activet-trail {

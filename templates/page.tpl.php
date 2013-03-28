@@ -93,6 +93,16 @@
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
-    <?php print $footer_links; ?>
+    <?php if (isset($footer_links)): ?>
+      <?php print $footer_links; ?>
+    <?php else: ?>
+      <div class="span12">
+        <?php if ($footer_menu): ?>
+          <nav id="footer-menu" class="footer-menu">
+            <?php print render($footer_menu); ?>
+          </nav> <!-- /#footer-menu -->
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </footer>

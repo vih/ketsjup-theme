@@ -2,6 +2,7 @@
 // SASS partials import
 // --------------------------------------------------
 @import "compass";
+@import "compass/typography/text/replacement";
 
 // Mixins and Variables
 // --------------------------------------------------
@@ -28,3 +29,7 @@
 @import "comment";
 @import "node";
 @import "user";
+
+#logo {
+  @include replace-text-with-dimensions("../../logo.png");
+}

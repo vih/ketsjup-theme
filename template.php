@@ -14,19 +14,19 @@ function ketsjup_preprocess_page(&$variables) {
     $links = array(
       'facebook' => array(
         'title' => t('Vi er på Facebook'),
-        'sub_title' => t('Synes om'),
+        'sub_title' => t('Synes godt om'),
         'href' => 'http://facebook.com/vejleidraetsefterskole',
         'icon' => 'icon-facebook',
       ),
       'twitter' => array(
         'title' => t('Følg os på Twitter'),
-        'sub_title' => t('Få det seneste'),
+        'sub_title' => t('Med på det nyeste'),
         'href' => 'http://twitter.com/ViesTwit',
         'icon' => 'icon-twitter',
       ),
       'contact' => array(
-        'title' => t('Sig hej'),
-        'sub_title' => t('HOld kontakten'),
+        'title' => t('Skriv til os'),
+        'sub_title' => t('Kom i kontakt'),
         'href' => 'kontakt',
         'icon' => 'icon-envelope',
       ),
@@ -34,6 +34,7 @@ function ketsjup_preprocess_page(&$variables) {
         'title' => '+45 75820811',
         'sub_title' => t('Tal med os'),
         'icon' => 'icon-phone',
+        'href' => 'kontakt',
       ),
     );
 

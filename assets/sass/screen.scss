@@ -2,7 +2,6 @@
 // SASS partials import
 // --------------------------------------------------
 @import "compass";
-@import "compass/typography/text/replacement";
 
 // Mixins and Variables
 // --------------------------------------------------
@@ -30,6 +29,12 @@
 @import "node";
 @import "user";
 
+// My edits
+// --------------------------------------------------
+@import "compass/typography/text/replacement";
+@import "compass/css3/opacity";
+$branding-color: $orange;
+
 #logo {
   @include replace-text-with-dimensions("../../logo.png");
 }
@@ -38,4 +43,56 @@
   @media (min-width: 960px) {
     margin-top: 28px;
   } 
+}
+
+body #header {
+  background-color: $branding-color !important;
+  
+  .navbar-inner {
+    background-color: $branding-color !important;
+    
+    .container {
+      background-color: $branding-color !important;
+    }
+  }
+}
+
+.frontpage-subjects {
+  .views-row {
+    @include clearfix;
+    margin-bottom: 5px;
+    width: 100% !important;
+  }
+  
+  .views-field {
+    float: right;
+  }
+  
+  .views-field-title {
+    height: 60px;
+    background: black;
+    h3 {
+      font-size: 1.5em;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.front {
+  .view-content.row-fluid {
+    width: 100% !important;
+  }
+  #panels-ipe-paneid-57, #panels-ipe-paneid-58, #panels-ipe-paneid-59 {
+    margin-top: 30px;
+    .pane-title {
+      position: absolute;
+      top: 120px;
+      right: 0px;
+      padding: 1em;
+      background: black;
+      @include opacity(0.7);
+    }  
+  }
+   
 }

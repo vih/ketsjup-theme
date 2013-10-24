@@ -8,31 +8,31 @@
 /**
  * Implements template_preprocess_page().
  */
-function chef_preprocess_page(&$variables) {
+function ketsjup_preprocess_page(&$variables) {
   // footer links
-  if (module_exists('restaurant_base')) {
+
     $links = array(
-      'twitter' => array(
-        'title' => t('Follow Us on Twitter'),
-        'sub_title' => t('Get the latest'),
-        'href' => restaurant_base_get_settings('twitter'),
-        'icon' => 'icon-twitter',
-      ),
       'facebook' => array(
-        'title' => t('We\'re on Facebook'),
-        'sub_title' => t('Like Us'),
-        'href' => restaurant_base_get_settings('facebook'),
+        'title' => t('Vi er på Facebook'),
+        'sub_title' => t('Synes om'),
+        'href' => 'http://facebook.com/vejleidraetsefterskole',
         'icon' => 'icon-facebook',
       ),
+      'twitter' => array(
+        'title' => t('Følg os på Twitter'),
+        'sub_title' => t('Få det seneste'),
+        'href' => 'http://twitter.com/ViesTwit',
+        'icon' => 'icon-twitter',
+      ),
       'contact' => array(
-        'title' => t('Say Hello here'),
-        'sub_title' => t('Keep in touch'),
-        'href' => 'contact',
+        'title' => t('Sig hej'),
+        'sub_title' => t('HOld kontakten'),
+        'href' => 'kontakt',
         'icon' => 'icon-envelope',
       ),
       'phone' => array(
-        'title' => restaurant_base_get_settings('phone'),
-        'sub_title' => t('Talk to Us'),
+        'title' => '+45 75820811',
+        'sub_title' => t('Tal med os'),
         'icon' => 'icon-phone',
       ),
     );
@@ -64,5 +64,4 @@ function chef_preprocess_page(&$variables) {
     $footer_links .= '</div>';
 
     $variables['footer_links'] = $footer_links;
-  }
 }

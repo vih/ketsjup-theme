@@ -62,10 +62,10 @@ $branding-color: $orange;
   
   &:after {
     @if $direction == "left" {
-      border-right: 302px solid transparent;
+      border-right: 300px dotted transparent;
       border-bottom: 28px solid black;
     } @else {
-      border-left: 300px solid transparent;
+      border-left: 300px dotted transparent;
       border-bottom: 28px solid black;
     }
     content: " ";
@@ -127,8 +127,19 @@ body #header {
       right: 1px;
       background: black;
       @include opacity(0.8);
-      padding: 1em;
+      padding: 0 1em 0.5em;
+      width: 200px;
+    }
+    .pane-title:after {
+      border-bottom: 28px solid black;
+      border-right: 200px dotted transparent;
+      content: " ";
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      top: -28px;
+      width: 0;
+      left: 0;
     }
   }
 }
-

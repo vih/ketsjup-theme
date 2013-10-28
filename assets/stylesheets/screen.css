@@ -10438,17 +10438,17 @@ body #header .navbar-inner .container {
   background: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
-  padding: 0 1em 0.5em;
-  width: 200px;
+  padding: 0 1em 0.6em;
+  width: 175px;
 }
 .front .pane-fpid-14 .pane-title:after, .front .pane-fpid-15 .pane-title:after, .front .pane-fpid-16 .pane-title:after {
-  border-bottom: 28px solid black;
-  border-right: 200px dotted transparent;
+  border-bottom: 24px solid black;
+  border-right: 210px dotted transparent;
   content: " ";
   height: 0;
   overflow: hidden;
   position: absolute;
-  top: -28px;
+  top: -24px;
   width: 0;
   left: 0;
 }

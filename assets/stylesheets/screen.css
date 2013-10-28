@@ -10427,11 +10427,12 @@ body #header .navbar-inner .container {
   padding-right: 1em;
 }
 
-.front .pane-fpid-14, .front .pane-fpid-15, .front .pane-fpid-16 {
+.front .vies-slanted-box {
   margin-top: 8%;
   position: relative;
 }
-.front .pane-fpid-14 .pane-title, .front .pane-fpid-15 .pane-title, .front .pane-fpid-16 .pane-title {
+.front .vies-slanted-box .pane-title {
+  z-index: 100;
   position: absolute;
   top: 60%;
   right: 1px;
@@ -10441,7 +10442,7 @@ body #header .navbar-inner .container {
   padding: 0 1em 0.6em;
   width: 175px;
 }
-.front .pane-fpid-14 .pane-title:after, .front .pane-fpid-15 .pane-title:after, .front .pane-fpid-16 .pane-title:after {
+.front .vies-slanted-box .pane-title:after {
   border-bottom: 24px solid black;
   border-right: 210px dotted transparent;
   content: " ";

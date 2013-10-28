@@ -10427,11 +10427,11 @@ body #header .navbar-inner .container {
   padding-right: 1em;
 }
 
-.front .vies-slanted-box {
+.vies-slanted-box {
   margin-top: 8%;
   position: relative;
 }
-.front .vies-slanted-box .pane-title {
+.vies-slanted-box .pane-title {
   z-index: 100;
   position: absolute;
   top: 60%;
@@ -10442,7 +10442,7 @@ body #header .navbar-inner .container {
   padding: 0 1em 0.6em;
   width: 175px;
 }
-.front .vies-slanted-box .pane-title:after {
+.vies-slanted-box .pane-title:after {
   border-bottom: 24px solid black;
   border-right: 210px dotted transparent;
   content: " ";

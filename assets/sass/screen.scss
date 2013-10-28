@@ -117,31 +117,31 @@ body #header {
   }
 }
 
-.front {
-  .vies-slanted-box {
-    margin-top: 8%;
-    position: relative;
-    
-    .pane-title {
-      z-index: 100;
-      position: absolute;
-      top: 60%;
-      right: 1px;
-      background: black;
-      @include opacity(0.8);
-      padding: 0 1em 0.6em;
-      width: 175px;
-    }
-    .pane-title:after {
-      border-bottom: 24px solid black;
-      border-right: 210px dotted transparent;
-      content: " ";
-      height: 0;
-      overflow: hidden;
-      position: absolute;
-      top: -24px;
-      width: 0;
-      left: 0;
-    }
+
+.vies-slanted-box {
+  margin-top: 8%;
+  position: relative;
+
+  .pane-title {
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    right: 1px;
+    background: black;
+    @include opacity(0.8);
+    padding: 0 1em 0.6em;
+    width: 175px;
+  }
+  .pane-title:after {
+    border-bottom: 24px solid black;
+    border-right: 210px dotted transparent;
+    content: " ";
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -24px;
+    width: 0;
+    left: 0;
   }
 }
+

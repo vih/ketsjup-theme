@@ -1,19 +1,18 @@
 name        = Ketsjup
-description = Theme for vies.dk based on Radix
+description = Theme for vies.dk based on Chef and Radix
 screenshot  = screenshot.png
 core        = 7.x
 
 ; Base - Radix
-base theme  = radix
+base theme  = chef
 ; hidden = true
 
 ; Regions
-regions[content]      = Content
-regions[footer]       = Footer
+regions[content] = Content
+regions[footer]  = Footer
 
 ; CSS - General
-stylesheets[all][]     = assets/stylesheets/screen.css
-stylesheets[print][]   = assets/stylesheets/print.css
+stylesheets[all][]   = assets/stylesheets/ketsjup.css
 
 ; CSS - Conditional
 stylesheets-conditional[IE 7][all][] = assets/stylesheets/ie7.css

@@ -30,7 +30,7 @@
   
   <div class="container">
     <div class="row-fluid">
-      <div class="span12 sidebar panel-panel">
+      <div class="span12 widemessage panel-panel">
         <div class="panel-panel-inner">
           <?php print $content['widemessage']; ?>
         </div>

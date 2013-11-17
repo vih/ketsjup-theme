@@ -11,8 +11,8 @@
 
 // Radix
 // --------------------------------------------------
-@import "compass_radix";
-@import "compass_radix_responsive";
+// @import "compass_radix";
+// @import "compass_radix_responsive";
 
 // Theme CSS
 // --------------------------------------------------
@@ -39,6 +39,10 @@ $branding-color: $orange;
 
 #logo {
   @include replace-text-with-dimensions("../../logo.png");
+}
+
+.widemessage .panel-panel-inner {
+  margin-top: 1em;
 }
 
 #main-menu {

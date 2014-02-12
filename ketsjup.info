@@ -12,7 +12,7 @@ regions[content] = Content
 regions[footer]  = Footer
 
 ; CSS - General
-stylesheets[all][]   = assets/stylesheets/screen.css
+stylesheets[all][]   = assets/stylesheets/ketsjup.css
 
 ; CSS - Conditional
 stylesheets-conditional[IE 7][all][] = assets/stylesheets/ie7.css

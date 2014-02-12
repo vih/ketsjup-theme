@@ -37,10 +37,10 @@
 
 $branding-color: $orange;
 
-div#main-wrapper {
+body {
   background-image: image-url('globen-background.jpg');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left 95%;
 }
 
 #logo {

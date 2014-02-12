@@ -1,7 +1,7 @@
-div#main-wrapper {
+body {
   background-image: url('../images/globen-background.jpg?1392200476');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left 95%;
 }
 
 #logo {

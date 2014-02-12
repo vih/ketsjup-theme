@@ -1,3 +1,9 @@
+body {
+  background-image: url('../images/globen-background.jpg?1392199854');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
 #logo {
   text-indent: -119988px;
   overflow: hidden;

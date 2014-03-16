@@ -18,6 +18,12 @@ function ketsjup_preprocess_page(&$variables) {
         'href' => 'http://facebook.com/vejleidraetsefterskole',
         'icon' => 'icon-facebook',
       ),
+      'instagram' => array(
+        'title' => t('Se os på Instagram'),
+        'sub_title' => t('#ikkhårdtnok'),
+        'href' => 'http://instagram.com/viesdk',
+        'icon' => 'icon-instagram',
+      ),
       'twitter' => array(
         'title' => t('Følg os på Twitter'),
         'sub_title' => t('Med på det nyeste'),
@@ -25,17 +31,19 @@ function ketsjup_preprocess_page(&$variables) {
         'icon' => 'icon-twitter',
       ),
       'contact' => array(
-        'title' => t('Skriv til os'),
+        'title' => t('Skriv eller ring +45 75820811'),
         'sub_title' => t('Kom i kontakt'),
         'href' => 'kontakt',
         'icon' => 'icon-envelope',
       ),
+      /*
       'phone' => array(
         'title' => '+45 75820811',
         'sub_title' => t('Tal med os'),
         'icon' => 'icon-phone',
         'href' => 'kontakt',
       ),
+      */
     );
 
     $footer_links = '<div class="footer-links row-fluid">';

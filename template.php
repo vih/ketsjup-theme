@@ -6,6 +6,20 @@
  */
 
 /**
+ * Replace Panopoly Layouts with the Radix pendants.
+ *
+ * Implements hook_ctools_plugin_post_alter().
+ */
+function ketsjup_ctools_plugin_post_alter(&$plugin, &$info) {
+  if (($info['type'] == 'layouts') && ($plugin['module'] == 'panopoly_theme')) {
+    if (strpos($plugin['theme'], 'radix_') === FALSE) {
+      $plugin['theme'] = 'radix_' . $plugin['theme'];
+      unset($plugin['css']);
+    }
+  }
+}
+
+/**
  * Implements template_preprocess_page().
  */
 function ketsjup_preprocess_page(&$variables) {
@@ -36,21 +50,13 @@ function ketsjup_preprocess_page(&$variables) {
         'href' => 'kontakt',
         'icon' => 'icon-envelope',
       ),
-      /*
-      'phone' => array(
-        'title' => '+45 75820811',
-        'sub_title' => t('Tal med os'),
-        'icon' => 'icon-phone',
-        'href' => 'kontakt',
-      ),
-      */
     );
 
     $footer_links = '<div class="footer-links row-fluid">';
     foreach ($links as $link) {
       $title = $link['title'];
       $href = '';
-      
+
       $options = array();
       $options['html'] = TRUE;
 

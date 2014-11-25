@@ -260,6 +260,10 @@ cite {
   display: table;
 }
 
+.media img {
+  min-width: 150;
+}
+
 .media-body {
   display: table-cell;
   vertical-align: middle;

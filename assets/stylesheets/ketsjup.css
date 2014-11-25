@@ -255,3 +255,12 @@ cite {
   margin-top: 1em;
   color: grey;
 }
+
+.media {
+  display: table;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: middle;
+}

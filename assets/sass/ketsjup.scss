@@ -55,7 +55,7 @@ body {
 #main-menu {
   @media (min-width: 960px) {
     margin-top: 28px;
-  } 
+  }
 }
 
 @mixin box-slant-frontpage($direction: "right") {
@@ -70,7 +70,7 @@ body {
   @if $direction == "right" {
     left: 10px;
   }
-  
+
   &:after {
     @if $direction == "left" {
       border-right: 300px dotted transparent;
@@ -106,10 +106,10 @@ body {
 
 body #header {
   background-color: $branding-color !important;
-  
+
   .navbar-inner {
     background-color: $branding-color !important;
-    
+
     .container {
       background-color: $branding-color !important;
     }
@@ -118,11 +118,11 @@ body #header {
 
 .frontpage-subjects {
   margin-top: 40px;
-  
+
   .views-row-odd { 
     @include box-slant-frontpage("left");
   }
-  
+
   .views-row-even {
     @include box-slant-frontpage("right"); 
   }
@@ -155,7 +155,7 @@ body #header {
   }
 }
 
-/* VIH Plugins */
+// VIH Plugins
 
 .quote {
   border: 2px solid #ddd;
@@ -175,7 +175,7 @@ body #header {
   }
 }
 
-/* Action links */
+// Action links
 ul.action-links, div.btn-links ul {
   @include clearfix;
   padding: 0 !important;
@@ -220,7 +220,7 @@ ul.action-links, div.btn-links ul {
   .field-name-field-quote {
     padding-top: 1em;
   }
-  
+
   ul.links.inline {
     display: none;
   }

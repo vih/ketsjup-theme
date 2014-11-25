@@ -87,7 +87,7 @@
   </div>
   <div class="media-body">
     <?php print render($content['field_quote']); ?>
-    <cite>- <?php print strip_tags($title); ?></cite>
+    <cite>- <?php print strip_tags($title); ?>, <?php print strip_tags($content['field_accomplishments']); ?></cite>
   </div>
 </div>
 <blockquote>

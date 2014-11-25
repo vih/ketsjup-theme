@@ -6,20 +6,6 @@
  */
 
 /**
- * Replace Panopoly Layouts with the Radix pendants.
- *
- * Implements hook_ctools_plugin_post_alter().
- */
-function ketsjup_ctools_plugin_post_alter(&$plugin, &$info) {
-  if (($info['type'] == 'layouts') && ($plugin['module'] == 'panopoly_theme')) {
-    if (strpos($plugin['theme'], 'radix_') === FALSE) {
-      $plugin['theme'] = 'radix_' . $plugin['theme'];
-      unset($plugin['css']);
-    }
-  }
-}
-
-/**
  * Adds theme hook suggestions.
  *
  * Implements hook_preprocess_node().

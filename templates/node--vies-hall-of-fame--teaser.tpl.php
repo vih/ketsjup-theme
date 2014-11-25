@@ -80,12 +80,14 @@
  * @ingroup themeable
  */
 ?>
+<blockquote>
 <div class="media">
   <div class="pull-left">
     <?php print render($content['field_featured_image']); ?>
   </div>
   <div class="media-body">
     <?php print render($content['field_quote']); ?>
-    - <?php print strip_tags($title); ?>
+    <cite>- <?php print strip_tags($title); ?></cite>
   </div>
 </div>
+</blockquote>

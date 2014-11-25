@@ -248,3 +248,10 @@ ul.action-links li a::-moz-focus-inner, div.btn-links ul li a::-moz-focus-inner 
 .view-panopoly-widgets-general-content .node-vies-hall-of-fame ul.links.inline {
   display: none;
 }
+
+cite {
+  text-align: right;
+  display: block;
+  margin-top: 1em;
+  color: grey;
+}

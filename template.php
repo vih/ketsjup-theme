@@ -20,6 +20,17 @@ function ketsjup_ctools_plugin_post_alter(&$plugin, &$info) {
 }
 
 /**
+ * Adds theme hook suggestions.
+ *
+ * Implements hook_preprocess_node().
+ */
+function ketsjup_preprocess_node(&$vars) {
+  if ($vars['view_mode'] == 'teaser') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__teaser';
+  }
+}
+
+/**
  * Implements template_preprocess_page().
  */
 function ketsjup_preprocess_page(&$variables) {

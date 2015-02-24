@@ -274,3 +274,8 @@ cite {
 .front .views_slideshow_singleframe_teaser_section {
   width: 100% !important;
 }
+
+// Fix for IE and restricted images.
+.field img.panopoly-image-full, .field img.panopoly-image-half, .field img.panopoly-image-quarter {
+  width: 100%;
+}

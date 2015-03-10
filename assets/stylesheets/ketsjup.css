@@ -1,5 +1,16 @@
+.pane-recent-news-news-ticker {
+  width: 100%;
+  background-color: #303132;
+  padding: 12px 10px;
+  font-size: 18px;
+}
+.pane-recent-news-news-ticker .views_slideshow_cycle_teaser_section,
+.pane-recent-news-news-ticker .views_slideshow_slide {
+  width: 100% !important;
+}
+
 body {
-  background-image: url('../images/globen-background.jpg?1410959227');
+  background-image: url('../images/globen-background.jpg?1424742308');
   background-repeat: no-repeat;
   background-position: left 95%;
 }
@@ -9,7 +20,7 @@ body {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../images/../../logo.png?1410959227');
+  background-image: url('../images/../../logo.png?1424742308');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 124px;
@@ -149,7 +160,7 @@ body #header .navbar-inner .container {
 .quote .caption {
   padding-top: 1em;
   padding-right: 30px;
-  background: url('../images/blockquote.png?1410803237') top right no-repeat;
+  background: url('../images/blockquote.png') top right no-repeat;
 }
 
 ul.action-links, div.btn-links ul {
@@ -275,7 +286,6 @@ cite {
   width: 100% !important;
 }
 
-// Fix for IE and restricted images.
 .field img.panopoly-image-full, .field img.panopoly-image-half, .field img.panopoly-image-quarter {
   width: 100%;
 }

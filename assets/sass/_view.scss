@@ -2,6 +2,15 @@
 // Styles for Views
 // --------------------------------------------------
 
-
+.pane-recent-news-news-ticker {
+  width: 100%;
+  background-color: #303132;
+  padding: 12px 10px;
+  .views_slideshow_cycle_teaser_section,
+  .views_slideshow_slide {
+    width: 100% !important;
+  }
+  font-size: 18px;
+}
 // Menu Categories
 // --------------------------------------------------

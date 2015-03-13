@@ -1,6 +1,7 @@
-# A sample Gemfile
-source "https://rubygems.org"
+# Pull gems from RubyGems
+source 'https://rubygems.org'
 
-gem "compass_twitter_bootstrap"
-gem "compass_radix"
-gem "sassy-buttons"
+# Radix gems
+gem 'compass', '~> 1.0'
+gem 'bootstrap-sass', '~> 3.2'
+gem 'compass_radix', '~> 3.1.5'

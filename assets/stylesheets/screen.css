@@ -12462,11 +12462,11 @@ body {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url('../images/../../logo.png?1425325230');
+  background-image: url('../images/../../logo.png?1426218656');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 114px;
-  height: 43px;
+  width: 124px;
+  height: 47px;
 }
 
 /* line 81, ../sass/screen.scss */
@@ -12824,13 +12824,60 @@ cite {
     padding-right: 20px;
   }
 }
+/* line 325, ../sass/screen.scss */
+#footer {
+  background-color: #000;
+  color: #BBBBBB;
+  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+/* line 332, ../sass/screen.scss */
+#footer .footer-links h4 {
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1px !important;
+  font-size: 11px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+/* line 342, ../sass/screen.scss */
+#footer .footer-links h3 {
+  color: #999999;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0;
+  text-align: center;
+}
+/* line 348, ../sass/screen.scss */
+#footer .footer-links h3 a {
+  text-decoration: none;
+  color: #999999;
+}
+/* line 351, ../sass/screen.scss */
+#footer .footer-links h3 a:hover {
+  color: #fff;
+}
+/* line 354, ../sass/screen.scss */
+#footer .footer-links h3 a i {
+  display: block;
+  font-size: 3.0em;
+  height: auto;
+  line-height: 100%;
+  margin: 7px auto;
+  text-align: center;
+  width: auto;
+}
+
 @media (min-width: 1200px) {
-  /* line 327, ../sass/screen.scss */
+  /* line 370, ../sass/screen.scss */
   #page-header .page-header {
     padding: 50px 0 40px;
     margin-bottom: 40px;
   }
-  /* line 330, ../sass/screen.scss */
+  /* line 373, ../sass/screen.scss */
   #page-header .page-header h1 {
     font-size: 3.2em;
   }

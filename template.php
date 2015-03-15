@@ -41,25 +41,25 @@ function ketsjup_preprocess_page(&$variables) {
       'title' => t('Vi er på Facebook'),
       'sub_title' => t('Synes godt om'),
       'href' => 'http://facebook.com/vejleidraetsefterskole',
-      'icon' => 'icon-facebook',
+      'icon' => 'facebook',
     ),
     'instagram' => array(
       'title' => t('Se os på Instagram'),
       'sub_title' => t('#ikkhårdtnok'),
       'href' => 'http://instagram.com/viesdk',
-      'icon' => 'icon-instagram',
+      'icon' => 'instagram',
     ),
     'twitter' => array(
       'title' => t('Følg os på Twitter'),
       'sub_title' => t('Med på det nyeste'),
       'href' => 'http://twitter.com/ViesTwit',
-      'icon' => 'icon-twitter',
+      'icon' => 'twitter',
     ),
     'contact' => array(
       'title' => t('Skriv eller ring +45 75820811'),
       'sub_title' => t('Kom i kontakt'),
       'href' => 'kontakt',
-      'icon' => 'icon-envelope',
+      'icon' => 'envelope',
     ),
   );
 
@@ -79,7 +79,7 @@ function ketsjup_preprocess_page(&$variables) {
     }
 
     $icon = isset($link['icon']) ? $link['icon'] : '';
-    $title .= '<i class="' . $icon . '"></i>';
+    $title .= '<i class="fa fa-' . $icon . '"></i>';
 
     $footer_links .= '<div class="col-md-3">';
     $footer_links .= '<h4>' . $link['sub_title'] . '</h4>';

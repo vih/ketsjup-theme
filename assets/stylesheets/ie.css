@@ -3443,11 +3443,11 @@ body {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url('../images/../../logo.png?1425325230');
+  background-image: url('../images/../../logo.png?1426218656');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 114px;
-  height: 43px;
+  width: 124px;
+  height: 47px;
 }
 
 /* line 81, ../sass/screen.scss */
@@ -3725,94 +3725,4 @@ ul.action-links li a::-moz-focus-inner, div.btn-links ul li a::-moz-focus-inner 
 .view-panopoly-widgets-general-content .node-vies-hall-of-fame:before, .view-panopoly-widgets-general-content .node-vies-hall-of-fame:after {
   content: " ";
   display: table;
-}
-/* line 19, ../../../../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.view-panopoly-widgets-general-content .node-vies-hall-of-fame:after {
-  clear: both;
-}
-/* line 247, ../sass/screen.scss */
-.view-panopoly-widgets-general-content .node-vies-hall-of-fame h2 {
-  display: none;
-}
-/* line 251, ../sass/screen.scss */
-.view-panopoly-widgets-general-content .node-vies-hall-of-fame .field-name-field-featured-image {
-  float: left;
-  margin-right: 1em;
-}
-/* line 256, ../sass/screen.scss */
-.view-panopoly-widgets-general-content .node-vies-hall-of-fame .field-name-field-quote {
-  padding-top: 1em;
-}
-/* line 260, ../sass/screen.scss */
-.view-panopoly-widgets-general-content .node-vies-hall-of-fame ul.links.inline {
-  display: none;
-}
-
-/* line 265, ../sass/screen.scss */
-cite {
-  text-align: right;
-  display: block;
-  margin-top: 1em;
-  color: grey;
-}
-
-/* line 272, ../sass/screen.scss */
-.media {
-  display: table;
-  margin-top: 1em !important;
-  margin-bottom: 1em !important;
-}
-
-/* line 278, ../sass/screen.scss */
-.media img {
-  min-width: 150px !important;
-}
-
-/* line 282, ../sass/screen.scss */
-.media-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 287, ../sass/screen.scss */
-.front .views_slideshow_singleframe_teaser_section {
-  width: 100% !important;
-}
-
-/* line 292, ../sass/screen.scss */
-.field img.panopoly-image-full, .field img.panopoly-image-half, .field img.panopoly-image-quarter {
-  width: 100%;
-}
-
-/* line 297, ../sass/screen.scss */
-#page-header .page-header {
-  border-bottom: 1px dashed #eee;
-  text-align: center;
-  padding: 12px 0 18px;
-  margin-bottom: 18px;
-}
-/* line 302, ../sass/screen.scss */
-#page-header .page-header h1 {
-  font-size: 2.0em;
-  line-height: 100%;
-  font-weight: bold;
-}
-
-@media (max-width: 767px) {
-  /* line 315, ../sass/screen.scss */
-  body #main-wrapper #main > #content > #page-header {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 327, ../sass/screen.scss */
-  #page-header .page-header {
-    padding: 50px 0 40px;
-    margin-bottom: 40px;
-  }
-  /* line 330, ../sass/screen.scss */
-  #page-header .page-header h1 {
-    font-size: 3.2em;
-  }
 }

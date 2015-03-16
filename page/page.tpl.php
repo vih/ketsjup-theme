@@ -16,14 +16,12 @@
       <div class="navbar-inner">
         <div class="container clearfix">
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <a class="btn btn-navbar btn-navbar-menu visible-xs visible-sm" data-toggle="collapse" data-target=".nav-menu-collapse">
+            <i class="fa fa-bars"></i>
           </a>
           <?php if ($search_form): ?>
-            <a class="btn btn-navbar btn-navbar-search" data-toggle="collapse" data-target=".nav-search-collapse">
-              <span class="icon-search"></span>
+            <a class="btn btn-navbar btn-navbar-search visible-xs visible-sm" data-toggle="collapse" data-target=".nav-search-collapse">
+              <span class="fa fa-search"></span>
             </a>
           <?php endif; ?>
 
@@ -36,7 +34,7 @@
           <div class="nav-collapse nav-menu-collapse">
             <div class="inner">
               <?php if ($main_menu): ?>
-                <nav id="main-menu" class="main-menu pull-left" role="navigation">
+                <nav id="main-menu" class="main-menu pull-left nav navbar-nav" role="navigation">
                   <?php print render($main_menu); ?>
                 </nav> <!-- /#main-menu -->
               <?php endif; ?>
@@ -48,6 +46,7 @@
               <div class="inner">
                 <?php if ($search_form): ?>
                   <?php print $search_form; ?>
+                  <a id="desk-search-toggle"><i class="fa fa-search"></i></a>
                 <?php endif; ?>
               </div>
             </div>

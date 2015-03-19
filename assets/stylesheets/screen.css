@@ -12448,6 +12448,13 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
+/* line 16, ../sass/partials/_view.scss */
+.view-panopoly-news ul li {
+  margin-bottom: 1em;
+  margin-left: 0;
+  list-style: none;
+}
+
 /* line 71, ../sass/screen.scss */
 body {
   background-image: url('../images/globen-background.jpg?1426123214');
@@ -13087,14 +13094,20 @@ cite {
   .nav-search-collapse {
     display: block !important;
   }
+
+  /* line 554, ../sass/screen.scss */
+  .node-type-panopoly-news-article .pane-node-field-featured-image {
+    float: right;
+    max-width: 50%;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 557, ../sass/screen.scss */
+  /* line 563, ../sass/screen.scss */
   #page-header .page-header {
     padding: 50px 0 40px;
     margin-bottom: 40px;
   }
-  /* line 560, ../sass/screen.scss */
+  /* line 566, ../sass/screen.scss */
   #page-header .page-header h1 {
     font-size: 3.2em;
   }

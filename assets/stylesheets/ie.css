@@ -3429,6 +3429,13 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
+/* line 16, ../sass/partials/_view.scss */
+.view-panopoly-news ul li {
+  margin-bottom: 1em;
+  margin-left: 0;
+  list-style: none;
+}
+
 /* line 71, ../sass/screen.scss */
 body {
   background-image: url('../images/globen-background.jpg?1426123214');

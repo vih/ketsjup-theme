@@ -550,6 +550,12 @@ cite {
   .nav-search-collapse {
     display: block !important;
   }
+  .node-type-panopoly-news-article {
+    .pane-node-field-featured-image {
+      float: right;
+      max-width: 50%;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

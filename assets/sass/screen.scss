@@ -150,15 +150,7 @@ body {
 }
 
 body #header {
-  background-color: $branding-color !important;
-
-  .navbar-inner {
-    background-color: $branding-color !important;
-
-    .container {
-      background-color: $branding-color !important;
-    }
-  }
+  @include background-image(linear-gradient($orange, darken($orange, 10%)));
 }
 
 .frontpage-subjects {
@@ -532,7 +524,7 @@ cite {
   .navbar-right {
     display: none;
     padding: 5px;
-    background: $orange;
+    background: darken($orange, 10%);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     margin: 0 !important;

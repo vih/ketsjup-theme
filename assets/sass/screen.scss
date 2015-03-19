@@ -448,6 +448,12 @@ cite {
   }
 }
 
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: $orange;
+}
+
 #desk-search-toggle {
   display: none;
 }

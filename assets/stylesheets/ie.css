@@ -3967,18 +3967,25 @@ cite {
 }
 
 /* line 451, ../sass/screen.scss */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: #f89406;
+}
+
+/* line 457, ../sass/screen.scss */
 #desk-search-toggle {
   display: none;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .navbar-form {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .field img.panopoly-image-full,
 .field img.panopoly-image-half,
 .field img.panopoly-image-quarter {
@@ -3986,59 +3993,48 @@ cite {
 }
 
 @media (max-width: 991px) {
-  /* line 468, ../sass/screen.scss */
+  /* line 474, ../sass/screen.scss */
   #logo {
     float: none !important;
   }
 
-  /* line 475, ../sass/screen.scss */
+  /* line 481, ../sass/screen.scss */
   body #main-wrapper #main > #content > #page-header {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 484, ../sass/screen.scss */
+  /* line 490, ../sass/screen.scss */
   #navigation .nav-menu-collapse,
   #navigation .nav-search-collapse {
     clear: both;
     display: none;
   }
-  /* line 489, ../sass/screen.scss */
+  /* line 495, ../sass/screen.scss */
   #navigation .btn-navbar {
     float: right;
     margin-left: 10px;
   }
-  /* line 494, ../sass/screen.scss */
+  /* line 500, ../sass/screen.scss */
   #navigation .navbar-inner .brand {
     font-size: 1.2em;
   }
-  /* line 497, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu {
     margin-left: 0;
     text-align: center;
     float: none !important;
   }
-  /* line 503, ../sass/screen.scss */
+  /* line 509, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu ul li a {
     background: none;
     text-align: center;
   }
-  /* line 506, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu ul li a:hover {
     background: none;
   }
-  /* line 513, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu .dropdown-menu:before, #navigation .navbar-inner #main-menu .dropdown-menu:after {
     display: none !important;
-  }
-}
-@media (min-width: 992px) {
-  /* line 524, ../sass/screen.scss */
-  .navbar-right {
-    display: none;
-    padding: 5px;
-    background: #c67605;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    margin: 0 !important;
   }

@@ -411,7 +411,8 @@ cite {
           }
         }
         .caret {
-          color: $gray-light !important;
+          border-width: 6px;
+          margin-left: 4px;
         }
       }
     }

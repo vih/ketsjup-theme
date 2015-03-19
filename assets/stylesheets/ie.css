@@ -3999,49 +3999,54 @@ cite {
   max-width: 100%;
 }
 
+/* line 473, ../sass/screen.scss */
+.btn-primary {
+  background-color: #FA5D00;
+  border-color: #FA5D00;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+/* line 479, ../sass/screen.scss */
+.btn-primary:hover {
+  background-color: #ad4100;
+}
+
 @media (max-width: 991px) {
-  /* line 474, ../sass/screen.scss */
+  /* line 485, ../sass/screen.scss */
   #logo {
     float: none !important;
   }
 
-  /* line 481, ../sass/screen.scss */
+  /* line 492, ../sass/screen.scss */
   body #main-wrapper #main > #content > #page-header {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 490, ../sass/screen.scss */
+  /* line 501, ../sass/screen.scss */
   #navigation .nav-menu-collapse,
   #navigation .nav-search-collapse {
     clear: both;
     display: none;
   }
-  /* line 495, ../sass/screen.scss */
+  /* line 506, ../sass/screen.scss */
   #navigation .btn-navbar {
     float: right;
     margin-left: 10px;
   }
-  /* line 500, ../sass/screen.scss */
+  /* line 511, ../sass/screen.scss */
   #navigation .navbar-inner .brand {
     font-size: 1.2em;
   }
-  /* line 503, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu {
     margin-left: 0;
     text-align: center;
     float: none !important;
   }
-  /* line 509, ../sass/screen.scss */
+  /* line 520, ../sass/screen.scss */
   #navigation .navbar-inner #main-menu ul li a {
     background: none;
     text-align: center;
-  }
-  /* line 512, ../sass/screen.scss */
-  #navigation .navbar-inner #main-menu ul li a:hover {
-    background: none;
-  }
-  /* line 519, ../sass/screen.scss */
-  #navigation .navbar-inner #main-menu .dropdown-menu:before, #navigation .navbar-inner #main-menu .dropdown-menu:after {
-    display: none !important;
   }

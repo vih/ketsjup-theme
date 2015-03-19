@@ -470,6 +470,17 @@ cite {
   max-width: 100%;
 }
 
+.btn-primary {
+  background-color: $link-color;
+  border-color: $link-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  &:hover {
+    background-color: $link-hover-color;
+  }
+}
+
 @media (max-width: $screen-sm-max) {
   #logo {
     float: none !important;

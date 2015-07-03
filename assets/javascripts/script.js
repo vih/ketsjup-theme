@@ -29,6 +29,14 @@
                 $(this).parent().toggleClass('open');
             });
 
+            // Dropdowns for side menus.
+            $('.menu-block-wrapper .ul.menu li.dropdown-submenu').mouseenter(function() {
+              $(this).addClass('open');
+            });
+            $('.menu-block-wrapper ul.menu li.dropdown-submenu').mouseleave(function() {
+              $(this).removeClass('open');
+            });
+
             function positionSearch() {
                 var position = $('#navigation').height() + 15;
                 var search = $('.navbar-right.navbar-form');

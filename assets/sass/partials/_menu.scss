@@ -6,3 +6,7 @@
   left: 0;
   right: 0;
 }
+#navigation .navbar-inner #main-menu > li > a.active, #navigation .navbar-inner #main-menu > li > a:hover {
+  color: darken(white, 10%) !important;
+  font-weight: bold;
+}

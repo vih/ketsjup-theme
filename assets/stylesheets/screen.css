@@ -12047,6 +12047,12 @@ html.js fieldset.collapsed {
   right: 0;
 }
 
+/* line 9, ../sass/partials/_menu.scss */
+#navigation .navbar-inner #main-menu > li > a.active, #navigation .navbar-inner #main-menu > li > a:hover {
+  color: #e6e6e6 !important;
+  font-weight: bold;
+}
+
 /* line 5, ../sass/partials/_view.scss */
 .pane-recent-news-news-ticker {
   width: 100%;

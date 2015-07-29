@@ -10,3 +10,14 @@
   color: darken(white, 10%) !important;
   font-weight: bold;
 }
+
+@media(min-width: $screen-md-min) {
+  .dropdown-menu .dropdown-menu {
+    left: 100%;
+    right: auto;
+    top: 0;
+    &:before, &:after {
+      display: none !important;
+    }
+  }
+}

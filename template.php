@@ -35,6 +35,15 @@ function ketsjup_preprocess_page(&$variables) {
     $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
   }
 
+  // Format and add main menu to theme.
+  $main_menu_data = menu_build_tree(variable_get('menu_main_links_source', 'main-menu'), array(
+    'min_depth' => 1,
+    'max_depth' => 4,
+  ));
+  $variables['main_menu'] = menu_tree_output($main_menu_data);
+  $variables['main_menu']['#theme_wrappers'] = array();
+
+
   // Footer links.
   $links = array(
     'facebook' => array(

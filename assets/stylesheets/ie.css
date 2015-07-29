@@ -2756,7 +2756,7 @@ fieldset .panel-body {
 
 /* line 73, ../../../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.1.5/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1435926361') no-repeat right 8px #fff !important;
+  background: url('../images/throbber.gif?1438126045') no-repeat right 8px #fff !important;
 }
 /* line 76, ../../../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.1.5/stylesheets/compass_radix/_form.scss */
 html.js input.throbbing {
@@ -3068,6 +3068,18 @@ html.js fieldset.collapsed {
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  /* line 15, ../sass/partials/_menu.scss */
+  .dropdown-menu .dropdown-menu {
+    left: 100%;
+    right: auto;
+    top: 0;
+  }
+  /* line 19, ../sass/partials/_menu.scss */
+  .dropdown-menu .dropdown-menu:before, .dropdown-menu .dropdown-menu:after {
+    display: none !important;
+  }
+}
 /* line 5, ../sass/partials/_view.scss */
 .pane-recent-news-news-ticker {
   width: 100%;
@@ -3095,7 +3107,7 @@ html.js fieldset.collapsed {
 
 /* line 72, ../sass/screen.scss */
 body {
-  background-image: url('../images/globen-background.jpg?1435926361');
+  background-image: url('../images/globen-background.jpg?1438126045');
   background-repeat: no-repeat;
   background-position: left 95%;
 }
@@ -3740,27 +3752,3 @@ cite {
     cursor: pointer;
     padding: 10px 0px 11px 0px;
   }
-
-  /* line 562, ../sass/screen.scss */
-  .nav-menu-collapse,
-  .nav-search-collapse {
-    display: block !important;
-  }
-
-  /* line 567, ../sass/screen.scss */
-  .node-type-panopoly-news-article .pane-node-field-featured-image {
-    float: right;
-    max-width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 576, ../sass/screen.scss */
-  #page-header .page-header {
-    padding: 50px 0 40px;
-    margin-bottom: 40px;
-  }
-  /* line 579, ../sass/screen.scss */
-  #page-header .page-header h1 {
-    font-size: 3.2em;
-  }
-}

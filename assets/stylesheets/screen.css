@@ -12064,6 +12064,21 @@ html.js fieldset.collapsed {
   .dropdown-menu .dropdown-menu:before, .dropdown-menu .dropdown-menu:after {
     display: none !important;
   }
+
+  /* line 25, ../sass/partials/_menu.scss */
+  .nav-stacked .dropdown-menu {
+    left: 100%;
+    right: auto;
+    top: 0;
+  }
+  /* line 29, ../sass/partials/_menu.scss */
+  .nav-stacked .dropdown-menu:before, .nav-stacked .dropdown-menu:after {
+    display: none !important;
+  }
+  /* line 33, ../sass/partials/_menu.scss */
+  .nav-stacked .dropdown-menu > .active > a, .nav-stacked .dropdown-menu > .active > a:hover, .nav-stacked .dropdown-menu > .active > a:focus {
+    background-color: #f89406;
+  }
 }
 /* line 5, ../sass/partials/_view.scss */
 .pane-recent-news-news-ticker {

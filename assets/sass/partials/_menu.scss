@@ -20,4 +20,19 @@
       display: none !important;
     }
   }
+
+  .nav-stacked {
+    .dropdown-menu {
+      left: 100%;
+      right: auto;
+      top: 0;
+      &:before, &:after {
+        display: none !important;
+      }
+    }
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+      background-color: #f89406;
+    }
+  }
+
 }

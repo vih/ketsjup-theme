@@ -1,14 +1,13 @@
 //
 // SASS Mixins
-// --------------------------------------------------
 //
-// Styleguide 3
+// Styleguide Mixins
 
 // Mixin for Box Slant on Frontpage
 //
 // $direction - Can either be 'right' or 'left'
 //
-// Styleguide 3.1
+// Styleguide Mixins - Slanted Box Frontpage
 @mixin box-slant-frontpage($direction: "right") {
   @include opacity(0.8);
   width:300px;

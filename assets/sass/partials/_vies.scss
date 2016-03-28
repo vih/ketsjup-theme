@@ -1,0 +1,517 @@
+// VIES Specific additions
+//
+// Styleguide 2
+
+$branding-color: $orange;
+
+body {
+  background-image: image-url('globen-background.jpg');
+  background-repeat: no-repeat;
+  background-position: left 95%;
+}
+
+#logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url(/sites/all/themes/ketsjup/logo.png?1425961146);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 124px;
+  height: 47px;
+  box-sizing: content-box;
+  color: transparent !important;
+}
+
+.widemessage .panel-panel-inner {
+  margin-top: 1em;
+}
+
+#main-menu {
+  @media (min-width: 992px) {
+    margin-top: 28px;
+  }
+}
+
+body #header {
+  @include background-image(linear-gradient($orange, darken($orange, 10%)));
+}
+
+// Frontpage subjects
+//
+// Markup:
+// <div class="view view-vies-subjects view-id-vies_subjects view-display-id-panel_pane_2 frontpage-subjects view-dom-id-5b59360d841867d2ee5ef04765a167d0">
+//   <div class="view-content">
+//     <div class="views-row views-row-1 views-row-odd views-row-first col-md-6">
+//       <div class="views-field views-field-title">
+//         <h3 class="field-content"><a href="/fag/fodbold">Fodbold <i class="fa fa-arrow-circle-right"></i></a></h3>
+//       </div>
+//     </div>
+//   </div>
+//   <div class="view-content">
+//     <div class="views-row views-row-1 views-row-even views-row-first col-md-6">
+//       <div class="views-field views-field-title">
+//         <h3 class="field-content"><a href="/fag/fodbold">Fodbold <i class="fa fa-arrow-circle-right"></i></a></h3>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide 2.2.0
+.frontpage-subjects {
+  margin-top: 40px;
+  .views-row-odd {
+    @include box-slant-frontpage("left");
+  }
+
+  .views-row-even {
+    @include box-slant-frontpage("right");
+  }
+  .views-field-title {
+    @include pie-clearfix;
+  }
+}
+
+// Slanted image box
+//
+// Markup:
+// <div class="panel-panel-inner">
+//   <div class="panel-pane pane-fieldable-panels-pane pane-uuid-4359cd38-9b79-4a5d-b294-8a5cb1b1e88c vies-slanted-box pane-bundle-image">
+//     <h2 class="pane-title">
+//       <a href="">Billeder og video</a>
+//     </h2>
+//     <div class="pane-content">
+//     <div class="fieldable-panels-pane">
+//       <div class="field field-name-field-basic-image-image field-type-image field-label-hidden">
+//         <div class="field-items">
+//           <div class="field-item even">
+//             <img class="panopoly-image-full" src="https://vies.dk/sites/vies.local/files/styles/panopoly_image_full/public/general/1344282362prrd_0.jpg?itok=X39jbt-q" alt="BIlleder og video fra Vejle Idrætsefterskole" />
+//           </div>
+//         </div>
+//       </div>
+//       <div class="field field-name-field-basic-image-caption field-type-text-with-summary field-label-hidden">
+//         <div class="field-items">
+//           <div class="field-item even">
+//             <p><a href="/billeder">BIlleder og video fra Vejle Idrætsefterskole</a></p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide 2.2.1
+.vies-slanted-box {
+  margin-top: 8%;
+  position: relative;
+  overflow: hidden;
+  .pane-title {
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    right: 1px;
+    background: black;
+    @include opacity(0.8);
+    padding: 0 1em 0.6em;
+    width: 175px;
+  }
+  .pane-title:after {
+    border-bottom: 24px solid black;
+    border-right: 210px dotted transparent;
+    content: " ";
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -24px;
+    width: 0;
+    left: 0;
+  }
+}
+
+// VIH Plugins
+
+.quote {
+  border: 2px solid #ddd;
+  padding: 2em;
+  @include border-radius(10px);
+  margin-bottom: 1em;
+
+  img {
+    float: left;
+    margin-right: 20px;
+    vertical-align: center;
+  }
+  .caption {
+    padding-top: 1em;
+    padding-right: 30px;
+    background: image-url("blockquote.png") top right no-repeat;
+  }
+}
+
+// Action links
+ul.action-links, div.btn-links ul {
+  @include clearfix;
+  padding: 0 !important;
+  list-style-type: none !important;
+  overflow: hidden;
+  margin-left: 0 !important;
+  margin-bottom: 1em;
+
+  li, li.first {
+    margin-left: 0 !important;
+    float: left;
+    margin-right: 1em;
+    list-style-type: none !important;
+  }
+
+  li a {
+    @include sassy-button("matte", 5px, 16px, $branding-color, darken($branding-color, 8%), white, "inset");
+    text-decoration: none;
+  }
+}
+
+.alternate {
+  background: #cbcbcb;
+  @include border-radius(8px);
+  @include clearfix;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.view-panopoly-widgets-general-content .node-vies-hall-of-fame {
+  @include clearfix;
+
+  h2 {
+    display: none;
+  }
+
+  .field-name-field-featured-image {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .field-name-field-quote {
+    padding-top: 1em;
+  }
+
+  ul.links.inline {
+    display: none;
+  }
+}
+
+cite {
+  text-align: right;
+  display: block;
+  margin-top: 1em;
+  color: grey;
+}
+
+.media {
+  display: table;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.media img {
+  min-width: 150px !important;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front .views_slideshow_singleframe_teaser_section {
+  width: 100% !important;
+}
+
+// Fix for IE and restricted images.
+.field img.panopoly-image-full, .field img.panopoly-image-half, .field img.panopoly-image-quarter {
+  width: 100%;
+}
+
+#page-header {
+  .page-header {
+    border-bottom: 1px dashed #eee;
+    text-align: center;
+    padding: 12px 0 18px;
+    margin-bottom: 18px;
+    h1 {
+      font-size: 2.0em;
+      line-height: 100%;
+      font-weight: bold;
+    }
+  }
+}
+
+#footer {
+  background-color: #000;
+  color: #BBBBBB;
+  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+  .footer-links {
+    h4 {
+      color: $gray;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-left: 1px!important;
+      font-size: 11px;
+      line-height: 21px;
+      margin-bottom: 2px;
+      text-align: center;
+    }
+    h3 {
+      color: $gray-light;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 0;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $gray-light;
+        &:hover {
+          color: #fff;
+        }
+        i {
+          display: block;
+          font-size: 3.0em;
+          height: auto;
+          line-height: 100%;
+          margin: 7px auto;
+          text-align: center;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+#navigation {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  .btn-navbar {
+    background: $link-color;
+    color: $white;
+    text-shadow: none;
+    width: 36px;
+    font-size: 24px;
+    padding: 0;
+    &:hover {
+      color: $navbar-inverse-bg;
+      @include box-shadow(none);
+      span {
+        color: $navbar-inverse-bg;
+        &.icon-bar {
+          background: $navbar-inverse-bg;
+        }
+      }
+    }
+  }
+  .navbar-inner {
+    border: none;
+    @include box-shadow(none);
+    padding: 0;
+    .brand {
+      color: $white;
+      font-size: 2.0em;
+      padding: 14px 20px;
+      text-shadow: none;
+    }
+    #main-menu {
+      li {
+        &:hover a {
+          color: $link-color;
+        }
+        a {
+          color: $white;
+          font-size: 1.2em;
+          line-height: 160%;
+          padding: 11px 15px 10px;
+          text-shadow: none;
+          text-transform: uppercase;
+          background: none;
+          &.active, &:hover {
+            background: none;
+            @include box-shadow(none);
+            color: $link-color;
+          }
+        }
+        &.active-trail {
+          a {
+            @include box-shadow(none);
+            background: none;
+          }
+        }
+        .caret {
+          border-width: 6px;
+          margin-left: 4px;
+        }
+      }
+    }
+    .dropdown-menu {
+      border-radius: 6px;
+      &:before {
+        content: '';
+        display: inline-block;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ccc;
+        border-bottom-color: rgba(0,0,0,0.2);
+        position: absolute;
+        top: -7px;
+        left: 9px;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid white;
+        position: absolute;
+        top: -6px;
+        left: 10px;
+      }
+      a {
+        color: $link-color !important;
+        &.active, &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: $orange;
+}
+
+#desk-search-toggle {
+  display: none;
+}
+
+.navbar-form {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.field img.panopoly-image-full,
+.field img.panopoly-image-half,
+.field img.panopoly-image-quarter {
+  max-width: 100%;
+}
+
+.btn-primary {
+  background-color: $link-color;
+  border-color: $link-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  &:hover {
+    background-color: $link-hover-color;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  #logo {
+    float: none !important;
+  }
+  body {
+    #main-wrapper {
+      #main {
+        > #content {
+          > #page-header {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  #navigation {
+    .nav-menu-collapse,
+    .nav-search-collapse {
+      clear: both;
+      display: none;
+    }
+    .btn-navbar {
+      float: right;
+      margin-left: 10px;
+    }
+    .navbar-inner {
+      .brand {
+        font-size: 1.2em;
+      }
+      #main-menu {
+        margin-left: 0;
+        text-align: center;
+        float: none !important;
+        ul {
+          li {
+            a {
+              background: none;
+              text-align: center;
+              &:hover {
+                background: none;
+              }
+            }
+          }
+        }
+        .dropdown-menu {
+          &:before,
+          &:after {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: $screen-md-min) {
+  .navbar-right {
+    display: none;
+    padding: 5px;
+    background: darken($orange, 10%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0 !important;
+  }
+  #desk-search-toggle {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 0px 11px 0px;
+  }
+  .nav-menu-collapse,
+  .nav-search-collapse {
+    display: block !important;
+  }
+  .node-type-panopoly-news-article {
+    .pane-node-field-featured-image {
+      float: right;
+      max-width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #page-header {
+    .page-header {
+      padding: 50px 0 40px;
+      margin-bottom: 40px;
+      h1 {
+        font-size: 3.2em;
+      }
+    }
+  }
+}

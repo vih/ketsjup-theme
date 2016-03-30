@@ -1,0 +1,132 @@
+//
+// SASS Mixins
+//
+// Styleguide Mixins
+
+// box-slant-frontpage($direction)
+//
+// Mixin for Box Slant on Frontpage
+//
+// $direction - Can either be 'right' or 'left'
+//
+// Styleguide Mixins - Slanted Box Frontpage
+@mixin box-slant-frontpage($direction: 'right') {
+  @include opacity(.8);
+  background: $black;
+  color: $white;
+  font-weight: bold;
+  font-size: 140%;
+  margin: 0 0 20px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  width: 300px;
+  @if $direction == 'right' {
+    left: 10px;
+  }
+
+  &::after {
+    @if $direction == 'left' {
+      border-bottom: 28px solid $black;
+      border-right: 300px dotted transparent;
+    } @else {
+      border-bottom: 28px solid $black;
+      border-left: 300px dotted transparent;
+    }
+    content: ' ';
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -28px;
+    width: 0;
+  }
+
+  h3 {
+    @include opacity(1);
+    font-size: 1.5em;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    top: -10px;
+    z-index: 2;
+    @if $direction == 'right' {
+      float: right;
+      padding-right: 1em;
+    } @else {
+      padding-left: 1em;
+    }
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+// image-url($image)
+//
+// Helper after switching from Compass to LibSass.
+//
+// $image - Image relative to image folder
+//
+// Styleguide 8.3
+@function image-url($url) {
+  @return url('../images/' + $url);
+}
+
+// sassy-button()
+//
+// @deprecated
+//
+// Helper after switching from Compass (with the gem Sassy Buttons) to LibSass
+%sassy-button-default-structure {
+  cursor: pointer;
+  display: inline-block;
+}
+
+// Sassy Button defaults
+// These are the base defaults for the buttons, if you are going to use similar buttons on an entire site changing these
+// can save you some time by calling the sassy button mixin with less arguments.
+
+// Base color of button.
+$sb-base-color: rgba(11, 153, 194, 1) !default;
+
+// Optional secondary color for gradient.
+$sb-second-color: false !default;
+
+// Border radius of button.
+$sb-border-radius: 5px !default;
+
+// Padding that gives button structure.
+$sb-padding: .5em 1.5em !default;
+
+// Font size.
+$sb-font-size: 16px !default;
+
+// Button font color.
+$sb-text-color: $white !default;
+
+// Style of button text, can be "inset" or "raised" or false.
+$sb-text-style: 'inset' !default;
+
+// Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
+$sb-gradient-style: 'simple' !default;
+
+// Automatically generate pseudo state styles.
+$sb-pseudo-states: true !default;
+
+// Add gradient png for IE 7+
+$sb-ie-support: true !default;
+
+// The Sassy Button kitchen sink.
+@mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-states: $sb-pseudo-states, $ie: $sb-ie-support) {
+  @include sassy-button-structure($border-radius, $font-size, $sb-padding);
+}
+
+// Structure for a sassy button
+@mixin sassy-button-structure($border-radius: $sb-border-radius, $font-size: $sb-font-size, $padding: $sb-padding) {
+  @include border-radius($border-radius);
+  @extend %sassy-button-default-structure;
+  font-size: $font-size;
+  padding: $padding;
+}
